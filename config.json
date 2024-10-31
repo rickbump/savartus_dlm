@@ -1,0 +1,18 @@
+
+{
+    "db_connection_host": "127.0.0.1",
+    "db_connection_user": "default",
+    "db_connection_password": "SOPHIA",
+    "db_connection_db_name": "savartus_dlm_db",
+
+    "clean_bodytext": 1,
+
+    "legal_model_contract1": "cuad/legal-summarizer",
+    "legal_model_contract2": "legal-bart-large",
+    "legal_model_general1": "legal-bart-large",
+    "legal_model_general2": "legal-LED",
+
+    "ai_model": 1,
+    "ai_process": 1,
+    "audio_output_path": "/Users/rickbump/Library/Mobile Documents/com~apple~CloudDocs/Personal/Python code/Sandbox/output/temp.wav"
+}

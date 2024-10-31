@@ -1,0 +1,173 @@
+
+Media Storage & Project Management: We utilize Lucidlink as our virtual NAS to store and share large media files. We need a MAM lite solution that can integrate easily with this and other apps in our stack, including Asana (project management), Adobe Creative Suite, and Frame.io.
+-This is probably the ask that will require the least development work.  However, we’d need to know what interface LucidLink uses for their Virtual NAS to be more certain.
+
+
+
+Content Delivery: We need the ability to seamlessly create branded presentations that go beyond just adding a UTA logo. This should include multiple types of media—videos, PDFs, images—and customizable text fields such as bios and social media links.
+-This is not functionality that we have, nor is it on the roadmap to the best of my knowledge.  The closest SOPHIA has is Collections, which allows multiple assets to be grouped.  However, it does combine assets into a single presentation or video.
+
+
+
+Playlist Functionality: The option to version-stack, rearrange assets, and manage playlists in a user-friendly manner, allowing for continuous updates as needed.
+-Again, this is closest to Collections, but we don’t have the ability to control or adjust asset order within the collection.
+
+
+
+Customizable Templates: Our brand design team has the ability to create custom templates, and we’d like these to be flexible enough for quick adjustments and customization for different use cases.
+-No functionality exists to achieve this in SOPHIA
+
+
+
+Data & Analytics: Insightful data on user engagement is crucial. Metrics like how long content is viewed, which assets are performing well, and real-time updates to agents when content is frequently engaged would be ideal.
+-SOPHIA does allow for analytics and reporting on engagement with shared assets.  Real-time updates is not a standard feature.
+
+
+
+We’ve explored Shift.io (now EditShare), which meets many of these needs but lacks mobile optimization for presentation pages, which is essential since 50% of our audience engages via mobile.
+
+
+
+Variety of Workstreams: We have a wide range of teams across UTA, and each operates with distinct workflows.
+
+
+
+For instance:
+
+
+
+News & Broadcasting: Clients often provide media, and our team logs and edits the material. Assets need to be compiled into playlists and shared with buyers, making ease of playlist creation and media management crucial.
+
+
+Talent Teams: We source media ourselves and send it to agents for feedback. The media is then clipped and tailored to specific client needs before being delivered. This team is not tech-heavy, so ease of use for agents and assistants is vital.
+
+
+Speakers Team: They manage a lot of client content, including sizzles and excerpts from speeches. These assets need to be housed internally while also being easily pushed to external sites for visibility.
+
+
+Across all these workflows, non-creative and non-technical teams like assistants and agents will need easy access to the platform to retrieve, compile, and distribute media assets. The platform must be intuitive enough for those without deep technical skills to navigate efficiently. This is especially important for agents or assistants who need to quickly assemble branded presentations with multiple media types and customizable elements without needing constant support from creative or production teams.
+
+
+integrate with apps in our app stack such as Adobe Creative suite, Lucid Link, Frame.io and Asana.
+
+1. Documents:
+	•	DOCX / DOC (Microsoft Word documents): Used for internal communication, contracts, reports, policies, and more.
+	•	PDF (Portable Document Format): Widely used for official reports, contracts, invoices, compliance documents, and legal documents.
+	•	XLSX / XLS (Microsoft Excel spreadsheets): Used for financial reports, data analysis, performance tracking, and operational data.
+	•	PPTX / PPT (Microsoft PowerPoint presentations): Commonly used for presentations, pitches, and training materials.
+	•	TXT (Plain text files): Used for logs, notes, configuration files, and simple documentation.
+	•	CSV (Comma-Separated Values): Common format for exporting and importing tabular data, used frequently in databases, data analytics, and reporting.
+
+2. Database Files:
+	•	SQL / DB / MDB (Database files): Used to store structured data for applications, reports, and analytics.
+	•	BAK (Backup files): Common backup format used to store snapshots of databases and applications.
+
+3. Email and Messaging Files:
+	•	PST / OST (Outlook Data files): These files store email messages, calendar events, contacts, and tasks for users in enterprise environments.
+	•	EML (Email message files): Individual email messages stored outside of email clients.
+
+4. Multimedia and Graphics Files:
+	•	JPG / JPEG / PNG (Image files): Used for corporate branding, marketing, web content, and presentations.
+	•	MP4 (Video files): Used for training videos, product demos, and marketing materials.
+	•	GIF (Graphics Interchange Format): Sometimes used in presentations or internal communication for visual representations.
+	•	TIFF (Tagged Image File Format): High-quality image format often used for document scanning and archiving in enterprise settings.
+	•	PNG (Portable Network Graphics): A widely-used image format that supports transparency.
+	•	MP3 (Audio file): Widely used for music and audio recordings.
+	•	WAV (Audio file): Uncompressed audio format, often used for high-quality recordings.
+	•	MOV (Apple QuickTime Movie): A video format commonly used on macOS and iOS devices.
+
+5. Compressed and Archived Files:
+	•	ZIP / RAR (Compressed archives): Frequently used for bundling large amounts of data, software distribution, and storage of backups.
+	•	TAR / GZ (Linux/Unix compressed archives): Commonly used in server environments for compressing and archiving large datasets.
+
+6. Backup and Disk Image Files:
+	•	ISO (Disk image file): Used for storing complete images of disks or optical media, often used for software deployment or backups.
+	•	VHD / VMDK (Virtual machine disk files): Used for virtual machine environments to store virtual disk images for enterprise operations.
+	•	BAK (Backup files): Frequently used by enterprises for system, application, and database backups.
+
+7. Log and Configuration Files:
+	•	LOG (Log files): Generated by enterprise systems, applications, and servers, these files track events, errors, and user activities.
+	•	XML (Extensible Markup Language): Used for configuration files, data interchange, and integration between different enterprise systems.
+	•	YAML (YAML Ain’t Markup Language): Frequently used for configuration files in DevOps and cloud environments.
+
+8. System and Program Files:
+	•	EXE (Executable files): Used for installing and running software applications on Windows-based enterprise systems.
+	•	DLL (Dynamic Link Library): Contain shared code and resources for Windows applications.
+	•	DMG (Disk Image file for macOS): Used to distribute and install software in macOS enterprise environments.
+
+9. Development and Code Files:
+	•	JAVA / PY / JS / HTML (Code files): Source code files for enterprise applications and web development.
+	•	JSON (JavaScript Object Notation): Common format for data interchange, especially in APIs and cloud-based applications.
+
+10. Virtualization and Container Files:
+	•	OVA / OVF (Open Virtualization Format): Used to package virtual machines and appliances for deployment in virtual environments.
+	•	DOCKER (Container images and Dockerfile): Used in containerization environments for enterprise applications.
+
+11. Cloud and Collaboration Files:
+	•	GSLIDES / GSHEETS / GDOCS (Google Workspace files): Frequently used in cloud-based collaboration environments.
+	•	ONE (Microsoft OneNote): Notes and collaboration documents used in enterprise environments.
+
+12. ERP and CRM System Files:
+	•	SAP (Proprietary formats from SAP systems): Data and reports from ERP systems like SAP.
+	•	CRM Data Files: Proprietary files from CRM systems like Salesforce, HubSpot, or Dynamics used to store customer data.
+
+13. Data Analytics and BI Files:
+	•	PBIX (Power BI files): Files used in Microsoft’s Power BI for business analytics and data visualization.
+	•	QVF (Qlik Sense files): Used in Qlik Sense for business intelligence and data analysis.
+	•	TWBX (Tableau packaged workbook): Packaged Tableau files for reporting and dashboards.
+
+14. Software License and Configuration Files:
+	•	LIC (License files): Store software license information for various enterprise software products.
+	•	CFG (Configuration files): Store configurations for enterprise applications, servers, and networks.
+
+15. Security and Encryption Files:
+	•	KEY (Encryption key files): Used to store encryption keys for secure communications and data encryption.
+	•	CER / CRT (Certificate files): Used to store SSL/TLS certificates for secure communications.
+
+16. VM and Hypervisor Files:
+	•	VMDK / VHDX (Virtual disk files): Files used to store the virtual hard drives for virtual machines in hypervisor environments (e.g., VMware, Hyper-V).
+
+17. CAD and Design Files:
+	•	DWG (AutoCAD files): Used in industries like engineering, architecture, and construction for technical drawings.
+	•	PSD (Photoshop files): Used by marketing and design teams for creating graphics and visual assets.
+
+18. Spreadsheets and Financial Modeling Files:
+	•	XLSB (Excel Binary Workbook): Used for large datasets in financial models and enterprise resource planning.
+
+19. Email Server and Exchange Files:
+	•	EDB (Exchange Database): Used by Microsoft Exchange Server to store mailboxes, emails, and calendar data.
+
+20. Network and Device Configuration Files:
+	•	CFG (Configuration files for routers, switches, and firewalls): Store configurations for network devices.
+
+
+3. Compressed Files:
+	•	ZIP: Compressed file format used for bundling and reducing the size of files.
+	•	RAR: Another compressed archive format that supports more advanced compression features.
+4. System and Program Files:
+	•	EXE (Executable file): Windows-specific format for running programs.
+	•	DMG (Disk Image file for macOS): Used to install software on macOS.
+	•	ISO (Disk image): Commonly used for distribution of operating systems or large software packages.
+	•	DLL (Dynamic Link Library): Windows-specific system files containing code and data used by programs.
+	•	LOG (Log file): Text-based files that record events or activities from various programs and systems.
+
+5. Development and Code Files:
+	•	PY (Python file): Source code files for Python programs.
+	•	HTML / CSS / JS: Web development files for creating websites and applications.
+
+6. Other:
+	•	CSV (Comma-Separated Values): Used for storing tabular data, commonly used in spreadsheets and databases.
+	•	SQL (Structured Query Language): Files containing database queries or structures.
+
+
+to install speech recognition on ubuntu
+# On Ubuntu/Debian
+sudo apt install ffmpeg
+
+# On MacOS
+brew install ffmpeg
+
+# On Windows, download ffmpeg from https://ffmpeg.org/download.html and add it to your PATH
+
+#### Speech recognition models
+	1.	Download a Vosk Model: you can download a model for your language from the official Vosk models repository: https://alphacephei.com/vosk/models

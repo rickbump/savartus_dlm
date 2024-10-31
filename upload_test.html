@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+        .container {
+            max-width: 500px;
+            margin: auto;
+        }
+        .message {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>File Upload Test</h1>
+        <input type="file" id="fileInput" multiple>
+        <button type="button" onclick="uploadFiles()">Upload</button>
+        <div id="message" class="message"></div>
+    </div>
+
+    <h1>Test CORS Request</h1>
+    <script>
+        fetch('http://10.0.0.5:5000/search_processed_files?query=bumper', {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .catch(error => console.error('Error fetching data:', error));
+    </script>
+
+    <script>
+        async function uploadFiles() {
+            const input = document.getElementById('fileInput');
+            const messageDiv = document.getElementById('message');
+
+            if (!input.files.length) {
+                messageDiv.textContent = 'No files selected!';
+                return;
+            }
+
+            const formData = new FormData();
+            for (const file of input.files) {
+                formData.append('file', file);
+            }
+
+            try {
+                const response = await fetch('http://10.0.0.5:3000/upload', {
+                    method: 'POST',
+                    headers: {
+                        // Ensure you are not setting 'Content-Type' here; let the browser set the correct boundary for FormData
+                    },
+                    body: formData,
+                });
+
+                if (!response.ok) {
+                    throw new Error(`Server responded with status: ${response.status}`);
+                }
+
+                const data = await response.json();
+                messageDiv.textContent = `Success: ${data.message}`;
+            } catch (error) {
+                messageDiv.textContent = `Error: ${error.message}`;
+            }
+        }
+    </script>
+</body>
+</html>
