@@ -116,7 +116,7 @@ def image_summary(file_path):
     # •    'yolov8l.pt': Large version.
     # •    'yolov8x.pt': Extra-large version.
 
-    model = YOLO('yolov8x.pt')
+    model = YOLO('yolov8l.pt')
 
     # Run inference on an image
     results = model(file_path)

@@ -10,7 +10,7 @@ source = 'http://images.cocodataset.org/val2017/000000039769.jpg'
 # •    'yolov8l.pt': Large version.
 # •    'yolov8x.pt': Extra - large version.
 
-model = YOLO('yolov8x.pt')
+model = YOLO('yolov8l.pt')
 
 # Run inference on an image
 results = model(source)
