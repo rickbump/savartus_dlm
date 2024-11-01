@@ -1,15 +1,18 @@
-
 # my_flask_app.py
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 
 app = Flask(__name__)
-# CORS(app)  # This will enable CORS for all routes
-CORS(app, resources={r"/*": {"origins": "*"}})  # Allow all origins for
-app = Flask(__name__)
 
-# Enable CORS
-CORS(app, resources={r"/*": {"origins": "*"}})  # Adjust origins as needed
+# Configure CORS properly for production
+CORS(app, resources={
+    r"/*": {
+        "origins": ["http://localhost:3000", "http://10.0.0.5:3000"],  # Add your production domain
+        "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+        "allow_headers": ["Content-Type", "Authorization"]
+    }
+})
+
 @app.route('/')
 def home():
     return 'Server is running and reachable!', 200
