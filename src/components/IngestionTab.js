@@ -17,7 +17,7 @@ import { LocalizationProvider, DatePicker, TimePicker } from '@mui/x-date-picker
 import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
 import GlobalStateContext from '../GlobalStateContext';
 
-const API_URL = 'http://10.0.0.5:5000/upload';
+const API_URL = 'http://localhost:5000/upload';
 
 const DragDropArea = styled(Paper)(({ theme }) => ({
   border: '2px dashed #aaa',

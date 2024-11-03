@@ -12,7 +12,14 @@ const AccessShareTab = () => {
 
   // Handle search query
   const handleSearch = () => {
-    fetch(`http://10.0.0.5:5000/search_processed_files?query=${searchQuery}`)
+    fetch(`http://10.0.0.5:5000/search_processed_files?query=${searchQuery}`, {
+      method: 'GET',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      credentials: 'same-origin'
+    })
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');

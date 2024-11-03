@@ -1,4 +1,3 @@
-
 from flask import Flask, request, jsonify
 import os
 os.environ["FLASK_ENV"] = "production"
@@ -6,10 +5,15 @@ import subprocess
 from flask_cors import CORS
 
 app = Flask(__name__)
-#CORS(app, resources={r"/upload": {"origins": "*"}})  # Allow all origins or specify the frontend's origin URL for security
-CORS(app, resources={r"/*": {"origins": ["http://10.0.0.5:3000"]}})  # Set this to your frontend's IP and port
 
-# CORS(app, resources={r"/upload": {"origins": "http://yourfrontenddomain.com"}})
+# Update CORS configuration to match main app
+CORS(app, resources={
+    r"/*": {
+        "origins": ["http://localhost:3000", "http://10.0.0.5:3000"],  # Add your production domain
+        "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+        "allow_headers": ["Content-Type", "Authorization"]
+    }
+})
 
 UPLOAD_FOLDER = '/home/rbump/savartus_dlm/uploads'  # Change this to the directory on your Azure box
 # MAX_FILE_SIZE = 15 * 1024 * 1024  # 5 MB file size limit
